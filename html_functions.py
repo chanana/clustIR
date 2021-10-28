@@ -7,7 +7,7 @@ def make_dash_table_from_dataframe(dataframe):
         id="table",
         columns=[{"name": str(i), "id": str(i)} for i in dataframe.columns],
         data=dataframe.to_dict("records"),
-        style_table={'overflowX': 'scroll'}
+        style_table={"overflowX": "scroll"},
     )
 
 
